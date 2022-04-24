@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/index.css">
+    <link rel="stylesheet" href="/css/tools/toggle.css">
+    <script src="/js/byservice/toggle.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="analytics-page">
+        <div class="content">
+            <h1>유저 그룹 관리</h1>
+            <h3>유저 MBTI 분류</h3>
+            <details>
+                <summary>분류 설명</summary>
+                <p><b>사용 시간:</b> 1인당 총 사용 시간을 의미한다. 중앙값을 넘으면 F, 이외에는 S로 구분한다.</p>
+                <p><b>충성도:</b>플레이하는 넥슨 게임의 수를 의미한다. 중앙값을 넘으면 L, 이외에는 T로 구분한다.</p>
+                <p><b>몰입도:</b>한 번 시작하면 플레이하는 게임 시간을 의미한다. 중앙값을 넘으면 A, 이외에는 D로 구분한다.</p>
+                <p><b>지속성:</b>2011년 중 접속한 날의 비율을 의미한다. 중앙값을 넘으면 C, 이외에는 N로 구분한다.</p>
+            </details>
+            <div id="button-div" onchange=byServiceToggle()>
+                <div class="toggle-button-cover">
+                    <span>사용시간 F/S</span>
+                    <div class="button r" id="button-1">
+                        <input type="checkbox" class="checkbox" id='check1'/>
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                    </div>
+                </div>
+                <div class="toggle-button-cover">
+                    <span>충성도 L/T</span>
+                    <div class="button r" id="button-1">
+                        <input type="checkbox" class="checkbox" id='check2'/>
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                    </div>
+                </div>
+                <div class="toggle-button-cover">
+                    <span>몰입도 A/D</span>
+                    <div class="button r" id="button-1">
+                        <input type="checkbox" class="checkbox" id='check3'/>
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                    </div>
+                </div>
+                <div class="toggle-button-cover">
+                    <span>지속성 C/N</span>
+                    <div class="button r" id="button-1">
+                        <input type="checkbox" class="checkbox" id='check4'/>
+                        <div class="knobs"></div>
+                        <div class="layer"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="analysis-paragraph"><span id="user_type">FLAC</span> 유형은 16개 유형 중 <span id="rank">2</span>번째로 많은 유형이며, 전체 유저 중 <span id="percentage">18.2</span>%를 차지하고, 전체 플레이 시간 중 <span id="total_ratio">48.5</span>%를 차지한다. 해당 유형의 유저들은 1인당 연간 평균 <span id="person_time">404.4</span>시간의 게임을 하며, 평균적으로 <span id="lockin">5.52</span>개의 넥슨 서비스를 이용한다. 또한, 한 번 게임을 시작하면 <span id="focus">89</span>분을 플레이하고, 일 년 중 게임에 접속하는 날은 약 <span id="continuity">48.5</span>%이다. </p>
+                <p class="analysis-paragraph" id="explanation">해당 유저 집단은 총 게임 시간의 절반 가까이 차지하고, 연간 1인당 평균 게임 시간이 모든 유형 중에서 제일 길다. 가장 많은 매출이 발생하는 집단일 가능성이 높으며, 게임의 사업성을 위해 높은 우선순위를 놓고 관리해야 하는 집단이다.
+                    해당 유저들은 게임 시간이 긴 만큼 콘텐츠의 소비 속도도 빠르다. 하지만 주 매출을 발생시키는 집단이기에 이 유저들의 속도를 맞추어 콘텐츠를 공급하는 것이 바람직하다.
+                    </p>
+            </div>
+            <div class="move-button">
+                <div>
+                    <a href="/interservice2"><button class="before">이전</button></a>
+                    <a href="/summary3"></a><button class="next">다음</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="/">
+                    <i class="fa fa-info fa-2x"></i>
+                    <span class="nav-text">
+                        전체 현황 요약
+                    </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a href="/byservice1">
+                    <i class="fa fa-list fa-2x"></i>
+                    <span class="nav-text">
+                        서비스 별 특이사항
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/interservice1">
+                    <i class="fa fa-bar-chart-o fa-2x"></i>
+                    <span class="nav-text">
+                        서비스 사이의 관계
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/user1">
+                    <i class="fa fa-table fa-2x"></i>
+                    <span class="nav-text">
+                        유저 그룹 관리
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

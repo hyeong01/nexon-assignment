@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/index.css">
+    <script src="/js/byservice/dropdown.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="analytics-page">
+        <div class="content">
+            <h1>서비스 사이의 관계</h1>
+            <h3>상호 상관관계 히트맵</h3>
+            <img class="responsive-graph" src="https://i.imgur.com/A47zdm5.png">
+            <p class="analysis-paragraph">서비스 간의 피어슨 상관계수를 계산하였다. 계산 방식은 한 번이라도 유저가 해당 서비스에 접속한 기록이 있다면 1, 이외에는 0으로 판단하였다. 대부분의 경우 유의미한 상관 관계가 없었고, 단측 검정 기준 P-value가 0.05 미만인 상관관계를 하나라도 가진 서비스를 히트맵에 넣어 시각화하였다. </p>
+            <p class="analysis-paragraph">이처럼 확인했을 때 서비스 11, 13, 21은 서로 유의미한 상관 관계가 있는 것으로 나타났다. 이것은 게임이 비슷하거나, 개발사가 같은 등 다양한 이유 때문일 수 있다. 유저를 공유한다면, 세계관을 자연스럽게 공유하는 방법 등으로 유저를 게임에 더욱 몰입시킬 수 있다. 쿠키런 킹덤이나 마블 유니버스의 예시처럼 넓고 매력있는 세계관은 컨텐츠의 매력을 강화하는 효과가 있으며, 추가적인 부가가치 창출도 기대해 볼 수 있을 것이다. 또한, 콘텐츠 업데이트 등의 시기가 겹치지 않게 조율해 카니발라이제션을 방지하고, 유저가 꾸준히 콘텐츠가 업데이트 되는 것처럼 체감하게 하는 것도 좋을 것이다. </p>
+            <p class="analysis-paragraph">반면에 12, 13, 16, 20은 서로 강력한 음의 상관관계를 가진 서비스란 것을 알 수 있다. 마비노기와 같은 아기자기한 게임과 서든어택 같은 수위가 높은 게임 사이에서 이런 관계가 나타날 수 있을 것이다. 이 게임들 간의 콜라보레이션은 효과가 적을 것으로 예상할 수 있다.</p>
+            <div class="move-button">
+                <div>
+                    <a href="/byservice1"><button class="before">이전</button></a>
+                    <a href="/interservice2"><button class="next">다음</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="/">
+                    <i class="fa fa-info fa-2x"></i>
+                    <span class="nav-text">
+                        전체 현황 요약
+                    </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a href="/byservice1">
+                    <i class="fa fa-list fa-2x"></i>
+                    <span class="nav-text">
+                        서비스 별 특이사항
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/interservice1">
+                    <i class="fa fa-bar-chart-o fa-2x"></i>
+                    <span class="nav-text">
+                        서비스 사이의 관계
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/user1">
+                    <i class="fa fa-table fa-2x"></i>
+                    <span class="nav-text">
+                        유저 그룹 관리
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

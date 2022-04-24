@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/index.css">
+    <script src="/js/byservice/dropdown.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="analytics-page">
+        <div class="content">
+            <h1>서비스 사이의 관계</h1>
+            <h3>비주류 게임 유입 분석</h3>
+            <p class="analysis-paragraph">게임에 유입되는 과정은 무엇일까? 한 가지 가능한 경로는 넥슨을 통해 다른 게임을 접하게 되는 것이다. 이러한 낙수효과가 강력하게 존재한다면 비주류 게임들을 플레이하는 유저들은 게임을 다양하게 하는 경향이 있을 것이라고 추측해 볼 수 있다. 아래는 이런 추측에 부응하는 자료이다.</p>
+            <img class="responsive-graph" src="https://i.imgur.com/Jpm4rDc.png">
+            <p class="analysis-paragraph">총 플레이 시간과 플레이한 넥슨 게임의 각각 독립 변수와 종속 변수로 놓고 선형 회귀를 적용했을 때, 이런 현상을 명확히 확인할 수 있었다. R-squared 점수는 0.248이었고, 이는 다른 변수의 개입이 없다고 가정할 때, 플레이하는 게임의 개수의 평균이 게임의 인기도의 변동성을 24.8%나 설명할 수 있다는 뜻이다. 선형 회귀 계수는 -38.8로, 유저들이 평균적으로 게임을 하나 더 할수록, 해당 게임의 총 플레이 시간이 38.8년씩 줄어든다는 뜻이며, 선형 회귀 계수의 P-value는 0.018로 5% 유의 수준에서 두 변수가 유의미한 상관 관계를 가진다고 판단할 수 있다.</p>
+            <p class="analysis-paragraph">이는 인기가 높은 게임을 하다가 낮은 게임도 시도하는 낙수 효과의 존재에 대해서 일정 부분 확인한다. 이런 낙수의 결과가 유저의 기존 서비스에서의 이탈인지, 합계 매출의 증가인지 아니면 현상유지인지는 추가적인 조사가 필요하다.</p>
+            <img class="responsive-graph" src="https://i.imgur.com/3t6vRFF.png">
+            <p class="analysis-paragraph">위 그래프는 총 플레이 타임이 150년이 넘는 두 게임들을 극단치로 보고 선형회귀를 다시 진행한 결과이다. 하지만 여전히 R-squared 점수는 0.333이었으며, 계수는 -20.6, P-value는 0.008으로 매우 유의미한 수치를 얻을 수 있었다.</p>
+            <div class="move-button">
+                <div>
+                    <a href="/interservice1"><button class="before">이전</button></a>
+                    <a href="/user1"><button class="next">다음</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="/">
+                    <i class="fa fa-info fa-2x"></i>
+                    <span class="nav-text">
+                        전체 현황 요약
+                    </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a href="/byservice1">
+                    <i class="fa fa-list fa-2x"></i>
+                    <span class="nav-text">
+                        서비스 별 특이사항
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/interservice1">
+                    <i class="fa fa-bar-chart-o fa-2x"></i>
+                    <span class="nav-text">
+                        서비스 사이의 관계
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/user1">
+                    <i class="fa fa-table fa-2x"></i>
+                    <span class="nav-text">
+                        유저 그룹 관리
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>

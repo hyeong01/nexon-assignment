@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/home/index.css">
+    <link rel="stylesheet" href="/css/tools/dropdown.css">
+    <script src="/js/byservice/dropdown.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="analytics-page">
+        <div class="content">
+            <h1>서비스 별 특이사항</h1>
+            <h3>서비스 별 그래프</h3>
+            <div>
+            <select name="cars" id="cars" onchange=byServiceDropdown(this.value)>
+                <option value="1">Service 1</option>
+                <option value="2">Service 2</option>
+                <option value="3">Service 3</option>
+                <option value="4">Service 4</option>
+                <option value="5">Service 5</option>
+                <option value="6">Service 6</option>
+                <option value="7">Service 7</option>
+                <option value="8">Service 8</option>
+                <option value="9">Service 9</option>
+                <option value="10">Service 10</option>
+                <option value="11">Service 11</option>
+                <option value="12">Service 12</option>
+                <option value="13">Service 13</option>
+                <option value="14">Service 14</option>
+                <option value="15">Service 15</option>
+                <option value="16">Service 16</option>
+                <option value="17">Service 17</option>
+                <option value="18">Service 18</option>
+                <option value="19">Service 19</option>
+                <option value="20">Service 20</option>
+                <option value="21">Service 21</option>
+                <option value="22">Service 22</option>
+            </select>
+            </div>
+            <img src="https://i.imgur.com/qE1fXAM.png" id="octa_iamge" class="responsive-graph2">
+            <h3>지표 상세 설명</h3>
+            <p class="analysis-paragraph"><b>계절성:</b> 월 별로 총 게임 플레이 시간이 얼마나 변동하는지에 대한 값을 의미한다. 각각의 게임의 월 별 플레이 시간을 정규화 한 후 개별 게임의 표준편차를 구하고, 22개의 표준편차를 정규화하여 0부터 5 사이의 값으로 나타내었다.</p>
+            <p class="analysis-paragraph"><b>지속성:</b> 2011년에 접속한 날의 비율을 의미한다. 22개 게임의 비율을 정규화하여 0부터 5 사이의 값으로 나타내었다.</p>
+            <p class="analysis-paragraph"><b>인기도:</b> 각 게임의 총 사용 시간과 고유한 유저의 수를 조화평균한 수치이다. 조화 평균 이전에 두 가지 지표를 22개의 서비스에 대해 정규화한 후 조화평균을 구했고, 그렇게 도출한 값을 다시 정규화하였다.</p>
+            <p class="analysis-paragraph"><b>몰입도:</b> 1회 당 플레이 시간을 평균한 수치이다. 22개 게임에서 도출한 수치를 정규화하여 0부터 5 사이의 값으로 나타내었다.</p>
+            <p class="analysis-paragraph"><b>충성도:</b> 넥슨 플랫폼에 대한 충성도를 의미한다. 해당 게임을 하는 유저들이 플레이하는 넥슨 게임의 총 개수의 평균 값이다. 22개 게임에서 도출한 수치를 정규화하여 0부터 5 사이의 값으로 나타내었다.</p>
+            <p class="analysis-paragraph"><b>뉴비친화도:</b> 각각의 서비스가 얼마나 안 고였는지를 나타내는 값이다. 해당 게임 평균 플레이 시간의 역수를 정규화한 값이다. </p>
+            <div class="move-button">
+                <div>
+                    <a href="/summary1"><button class="before">이전</button></a>
+                    <a href="/interservice1"><button class="next">다음</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="main-menu">
+        <ul>
+            <li>
+                <a href="/">
+                    <i class="fa fa-info fa-2x"></i>
+                    <span class="nav-text">
+                        전체 현황 요약
+                    </span>
+                </a>
+            </li>
+            <li class="has-subnav">
+                <a href="/byservice1">
+                    <i class="fa fa-list fa-2x"></i>
+                    <span class="nav-text">
+                        서비스 별 특이사항
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/interservice1">
+                    <i class="fa fa-bar-chart-o fa-2x"></i>
+                    <span class="nav-text">
+                        서비스 사이의 관계
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="/user1">
+                    <i class="fa fa-table fa-2x"></i>
+                    <span class="nav-text">
+                        유저 그룹 관리
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
